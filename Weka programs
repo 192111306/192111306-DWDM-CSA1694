@@ -1,0 +1,525 @@
+AIM:
+ 
+Create a Weather Table with the help of Data Mining Tool WEKA.
+ 
+Program:
+@relation weather
+@attribute outlook {sunny,rainy,overcast}
+ @attribute temparature numeric 
+@attribute humidity numeric
+@attribute windy {true,false}
+ @attribute play {yes,no}
+
+@data 
+sunny,85.0,85.0,false,no 
+overcast,80.0,90.0,true,no 
+sunny,83.0,86.0,false,yes
+ rainy,70.0,86.0,false,yes
+ rainy,68.0,80.0,false,yes 
+rainy,65.0,70.0,true,no 
+overcast,64.0,65.0,false,yes 
+sunny,72.0,95.0,true,no 
+sunny,69.0,70.0,false,yes 
+rainy,75.0,80.0,false,yes
+output:
+
+
+
+
+
+
+Result:
+
+This program has been successfully executed.
+
+
+EXPERIMENT NO: 2
+
+AIM :   
+Create an Employee Table with the help of Data Mining Tool WEKA
+
+PROGRAM:
+  @relation employee
+ @attribute name {x,y,z,a,b} 
+@attribute id numeric
+@attribute salary {low,medium,high}
+ @attribute exp numeric
+@attribute gender {male,female
+ @attribute phone numeric
+@data
+x,101,low,2,male,250311
+y,102,high,3,female,251665 
+z,103,medium,1,male,240238 
+a,104,low,5,female,200200
+b,105,high,2,male,240240
+
+
+
+
+OUTPUT:
+
+
+
+
+RESULT:
+
+This program has been successfully executed
+
+
+
+
+
+
+
+EXPERIMENT NO: 3
+AIM :
+           Create an weather Table with the help of Data Mining Tool WEKA.
+
+PROGRAM:
+            @relation weather
+@attribute outlook {sunny,rainy,overcast}
+@attribute temparature numeric
+@attribute humidity numeric
+@attribute windy {true,false}
+@attribute play {yes,no}
+ @data
+sunny,85.0,85.0,false,no
+overcast,80.0,90.0,true,no
+sunny,83.0,86.0,false,yes
+rainy,70.0,86.0,false,yes
+rainy,68.0,80.0,false,yes
+rainy,65.0,70.0,true,no
+overcast,64.0,65.0,false,yes
+sunny,72.0,95.0,true,no
+sunny,69.0,70.0,false,yes
+rainy,75.0,80.0,false,yes
+
+OUTPUT:
+          
+          
+
+
+
+
+
+
+
+
+
+Add Pre-Processing Technique:
+   
+   
+Weather Table after removing attributes WINDY, PLAY: 
+
+
+
+Weather Table after Normalizin TEMPARATURE,HUMIDITY:
+
+     
+RESULT:
+           This program has been successfully executed
+
+
+
+
+
+
+
+    
+
+
+ EXPERIMENT NO: 4
+AIM: 
+          Apply Pre-Processing techniques to the training data set of 
+
+Employee Table 
+
+
+PROGRAM:
+
+  @relation employee
+@attribute name {x,y,z,a,b}
+@attribute id numeric
+@attribute salary {low,medium,high}
+@attribute exp numeric
+@attribute gender {male,female}
+@attribute phone numeric
+@data
+x,101,low,2,male,250311
+y,102,high,3,female,251665
+z,103,medium,1,male,240238
+a,104,low,5,female,200200
+b,105,high,2,male,240240
+
+Training Data Set  Employee Table 
+             
+
+
+
+
+
+
+
+
+Employee Table after adding new attribute ADDRESS:
+
+
+Employee Table after removing attributes SALARY, GENDER: 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+Normalize  Pre-Processing Technique: 
+
+
+      Result:
+ This program has been successfully executed
+
+
+EXPERIMENT NO:5
+AIM:
+          Normalize Weather Table data using Knowledge Flow.
+
+Creation of Weather Table: 
+PROGRAM:
+@relation weather
+@attribute outlook {sunny,rainy,overcast}
+@attribute temparature numeric
+@attribute humidity numeric
+@attribute windy {true,false}
+@attribute play {yes,no}
+@data
+sunny,85.0,85.0,false,no
+overcast,80.0,90.0,true,no
+sunny,83.0,86.0,false,yes
+rainy,70.0,86.0,false,yes
+rainy,68.0,80.0,false,yes
+rainy,65.0,70.0,true,no
+overcast,64.0,65.0,false,yes
+sunny,72.0,95.0,true,no
+sunny,69.0,70.0,false,yes
+rainy,75.0,80.0,false,yes
+Output:
+ 
+Training Data Set  Weather Table 
+        
+
+
+
+
+
+
+
+Procedure for Knowledge Flow: 
+
+Result: 
+This program has been successfully executed
+
+
+
+
+
+
+
+
+
+                                                           EXPERIMENT NO:6
+AIM:
+            Finding Association Rules for Buying data. 
+
+Creation of Buying Table: 
+  
+PROGRAM:
+  @relation buying
+@attribute age {L20,20-40,G40}
+@attribute income {high,medium,low}
+@attribute stud {yes,no}
+@attribute creditrate {fair,excellent}
+@attribute buyscomp {yes,no}
+@data
+L20,high,no,fair,yes
+20-40,low,yes,fair,yes
+G40,medium,yes,fair,yes
+L20,low,no,fair,no
+G40,high,no,excellent,yes
+L20,low,yes,fair,yes
+20-40,high,yes,excellent,no
+G40,low,no,fair,yes
+L20,high,yes,excellent,yes
+G40,high,no,fair,yes
+L20,low,yes,excellent,no
+G40,high,yes,excellent,no
+20-40,medium,yes,excellent,yes
+L20,medium,yes,fair,yes
+G40,high,yes,excellent,yes
+Output:
+ 
+Training Data Set  Buying Table
+    
+
+
+
+Procedure for Association Rules: 
+1) Open Start  Programs  Weka-3-4  Weka-3-4 
+2) Open explorer. 
+3) Click on open file and select buying.arff 
+4) Select Associate option on the top of the Menu bar. 
+5) Select Choose button and then click on Apriori Algorithm. 
+6) Click on Start button and output will be displayed on the right side of the window
+
+
+
+Result: 
+This program has been successfully 
+ EXPERIMENT NO:7
+AIM:
+  Finding Association Rules for Banking data. 
+Creation of Banking Table: 
+Procedure: 
+@relation bank
+@attribute cust {male,female}
+@attribute accno {0101,0102,0103,0104,0105,0106,0107,0108,0109,0110,0111,0112,0113,0114,0115}
+@attribute bankname {sbi,hdfc,sbh,ab,rbi}
+@attribute location {hyd,jmd,antp,pdtr,kdp}
+@attribute deposit {yes,no}
+@data
+male,0101,sbi,hyd,yes
+female,0102,hdfc,jmd,no
+male,0103,sbh,antp,yes
+male,0104,ab,pdtr,yes
+female,0105,sbi,jmd,no
+male,0106,ab,hyd,yes
+female,0107,rbi,jmd,yes
+female,0108,hdfc,kdp,no
+male,0109,sbh,kdp,yes
+male,0110,ab,jmd,no
+female,0111,rbi,kdp,yes
+male,0112,sbi,jmd,yes
+female,0113,rbi,antp,no
+male,0114,hdfc,pdtr,yes
+female,0115,sbh,pdtr,no
+
+
+Training Data Set  Banking Table:
+
+   
+
+
+
+
+
+Procedure for Association Rules: 
+
+1) Open Start  Programs  Weka-3-4  Weka-3-4 
+2) Open explorer. 
+3) Click on open file and select bank.arff 
+4) Select Associate option on the top of the Menu bar. 
+5) Select Choose button and then click on Apriori Algorithm. 
+6) Click on Start button and output will be displayed on the right side of the window
+
+Result: 
+
+This program has been successfully executed.
+EXPERIMENT NO:8 
+AIM:
+                   Finding Association Rules for Employee data. 
+Creation of Banking Table: 
+Program: 
+ @relation employee-1
+@attribute age {youth, middle, senior}
+@attribute income {high, medium, low}
+@attribute class {A, B, C}
+@data
+youth, high, A
+youth,medium,B
+youth, low, C
+middle, low, C
+middle, medium, C
+middle, high, A
+senior, low, C
+senior, medium, B
+senior, high, B
+middle, high, B
+
+Training Data Set  Employee Table 
+
+Procedure for Association Rules: 
+1) Open Start  Programs  Weka-3-4  Weka-3-4 
+2) Open explorer. 
+3) Click on open file and select employee-1.arff 
+4) Select Associate option on the top of the Menu bar. 
+5) Select Choose button and then click on Apriori Algorithm. 
+6) Click on Start button and output will be displayed on the right side of the window
+
+
+
+RESULT:
+                                This program has been successfully executed.
+
+
+
+
+
+EXPERIMENT NO:9
+AIM:
+                To Construct Decision Tree for Weather data and classify it. 
+
+
+Creation of Weather Table:
+PROGRAM:
+
+@relation weather
+@attribute outlook {sunny, rainy, overcast}
+@attribute temperature numeric
+@attribute humidity numeric
+@attribute windy {TRUE, FALSE}
+@attribute play {yes, no}
+@data
+sunny,85,85,FALSE,no
+sunny,80,90,TRUE,no
+overcast,83,86,FALSE,yes
+rainy,70,96,FALSE,yes
+rainy,68,80,FALSE,yes
+rainy,65,70,TRUE,no
+overcast,64,65,TRUE,yes
+sunny,72,95,FALSE,no
+sunny,69,70,FALSE,yes
+rainy,75,80,FALSE,yes
+sunny,75,70,TRUE,yes
+overcast,72,90,TRUE,yes
+overcast,81,75,FALSE,yes
+rainy,71,91,TRUE,no
+
+Training Data Set  Weather Table
+
+
+
+
+
+Procedure for Decision Trees: 
+
+1) Open Start  Programs  Weka-3-4  Weka-3-4 
+2) Open explorer. 
+3) Click on open file and select weather.arff 
+4) Select Classifier option on the top of the Menu bar. 
+5) Select Choose button and click on Tree option. 
+6) Click on J48. 
+7) Click on Start button and output will be displayed on the right side of the window. 
+8) Select the result list and right click on result list and select Visualize Tree option. 
+9) Then Decision Tree will be displayed on new window.
+
+
+
+
+
+
+
+
+
+
+
+
+Decision Tree: 
+
+Result: 
+This program has been successfully executed.
+
+
+
+
+
+
+
+
+
+
+                                              EXPERIMENT NO:10
+AIM:
+           Normalize Employee Table data using Knowledge Flow.
+
+Creation of Employee Table: 
+
+   PROGRAM:
+        
+@relation employee 
+@attribute eid numeric 
+@attribute ename {raj,ramu,anil,sunil,rajiv,sunitha,kavitha,suresh,ravi,ramana,ram,kavya,navya} 
+@attribute salary numeric 
+@attribute exp numeric 
+@attribute address {pdtr,kdp,nlr,gtr} 
+@data 
+101,raj,10000,4,pdtr 
+102,ramu,15000,5,pdtr 
+103,anil,12000,3,kdp 
+104,sunil,13000,3,kdp 
+105,rajiv,16000,6,kdp 
+106,sunitha,15000,5,nlr 
+107,kavitha,12000,3,nlr 
+108,suresh,11000,5,gtr 
+109,ravi,12000,3,gtr 
+110,ramana,11000,5,gtr 
+111,ram,12000,3,kdp 
+112,kavya,13000,4,kdp 
+113,navya,14000,5,kdp
+
+
+
+
+
+
+Output:
+
+ 
+Training Data Set  Employee Table 
+
+
+
+
+
+
+
+
+
+
+
+Procedure for Knowledge Flow: 
+
+
+1) Open Start  Programs  Weka-3-4  Weka-3-4 
+2) Open the Knowledge Flow. 
+3) Select the Data Source component and add Arff Loader into the knowledge layout canvas. 
+4) Select the Filters component and add Attribute Selection and Normalize into the knowledge layout canvas. 
+5) Select the Data Sinks component and add Arff Saver into the knowledge layout canvas. 
+6) Right click on Arff Loader and select Configure option then the new window will be opened and select 
+Employee.arff 
+7) Right click on Arff Loader and select Dataset option then establish a link between Arff Loader and 
+Attribute Selection. 
+8) Right click on Attribute Selection and select Dataset option then establish a link between Attribute 
+Selection and Normalize. 
+9) Right click on Attribute Selection and select Configure option and choose the best attribute for Employee 
+data. 
+10) Right click on Normalize and select Dataset option then establish a link between Normalize and Arff Saver. 
+11) Right click on Arff Saver and select Configure option then new window will be opened and set the path, 
+enter .arff in look in dialog box to save normalize data. 
+12) Right click on Arff Loader and click on Start Loading option then everything will be executed one by one.21 
+13) Check whether output is created or not by selecting the preferred path. 
+14) Rename the data name as a.arff 
+15) Double click on a.arff then automatically the output will be opened in MS-Excel
+
+
+
+
+
+
+
+RESULT:
+This program has been successfully executed
